@@ -1,1 +1,1 @@
-<p>Success. <a href="list.jsp">View List</a></p>
+<p>Success. <a href="./">View List</a></p>

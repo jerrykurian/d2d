@@ -1,6 +1,7 @@
 package com.d2d.crud.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,7 +33,9 @@ public class UserController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Received the get request");
-		System.out.println("Received the post request");
+		List<User> users = UserServiceImpl.instance().findAll();
+		request.setAttribute("users", users);
+		request.getRequestDispatcher("list.jsp").forward(request, response);
 	}
 
 	/**
