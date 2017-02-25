@@ -8,7 +8,7 @@
 </head>
 <body>
 	<ul>
-		<li>Home</li>
+		<li>Home 1</li>
 		<li>Account</li>
 	</ul>
 	<div id="body">
